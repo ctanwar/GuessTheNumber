@@ -2,11 +2,13 @@ from guess_the_number_functions import *
 from art import logo
 print(logo)
 
-
+# Player chooses 'easy' or 'hard'; bad inputs default game to easy mode.
 choose_game_mode = intro()
 
+# Determines number of game rounds based on game mode.
 max_round = determine_max_rounds(choose_game_mode)
 
+# Basic game engine; loops until player answers correctly or until number of rounds depleted.
 for turn in range(max_round):
     print(f"You have {max_round} attempts remaining to guess the number.")
     ask_for_guess = int(input("Make a guess: "))
