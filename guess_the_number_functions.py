@@ -28,10 +28,10 @@ def guess_check(_guess, _answer):
     :return: 2 if high, 1 if low, 0 if equal
     """
     if _guess > _answer:
-        print("Too high.\nGuess again.")
+        print("Too high.")
         return 2
     elif _guess < _answer:
-        print("Too low.\nGuess again.")
+        print("Too low.")
         return 1
     else:
         print(f"You got it! The answer was {_answer}")
