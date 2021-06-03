@@ -1,3 +1,5 @@
+# All functions used in GuessTheNumber main.py
+
 def intro():
     """
     Prints intro text and asks user to choose game mode.
